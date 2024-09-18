@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap");
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Sofadi One", system-ui;
 }
 
 a {
@@ -24,4 +27,8 @@ dl {
 @font-face {
   font-family: "Vrdzagir";
   src: url("./Fonts/fonts/fonter.am_vrdznagir/Vrdznagir.otf");
+}
+
+body {
+  overflow-x: hidden;
 }

@@ -1,36 +1,41 @@
 import { motion } from "framer-motion";
+import nkar from "../../assets/Imgs/header.jpg";
+import birthday from "../../assets/Imgs/birthday.png";
 import "./Header.scss";
 
 const Header = () => {
   return (
     <motion.header
       className="header"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
     >
       <motion.div
         className="header-img"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: 0.5 }}
-      ></motion.div>
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1.2, delay: 0.5 }}
+      >
+        <img src={nkar} alt="Hayk" />
+      </motion.div>
 
       <motion.h1
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 2, delay: 1 }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1 }}
       >
-        Աննա <br /> & <br /> Դավիդ
+        Hayk
       </motion.h1>
 
-      <motion.p
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 2.5, delay: 1.5 }}
+      <motion.div
+        className="birthday"
+        initial={{ rotate: -180, opacity: 0 }}
+        animate={{ rotate: 0, opacity: 1 }}
+        transition={{ duration: 1.2, delay: 1.5 }}
       >
-        03. 08 . 2024
-      </motion.p>
+        <img src={birthday} alt="Birthday Icon" />
+      </motion.div>
     </motion.header>
   );
 };

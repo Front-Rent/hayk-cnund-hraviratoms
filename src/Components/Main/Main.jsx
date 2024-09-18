@@ -1,17 +1,18 @@
 import DaySection from "./DaySection/DaySection";
-import PlanSection from "./PlanSection/PlanSection";
-import MapsSection from "./MapsSection/MapsSection";
-import CounterSection from "./CounterSection/CounterSection";
-
+import GiftSection from "./GiftSection/GiftSection";
+import HyurerSection from "./HyurerSection/HyurerSection";
 import "./Main.scss";
+import MapSection from "./MapSection/MapSection";
+import Form from "../Form/Form";
 
 const Main = () => {
   return (
     <main>
+      <HyurerSection />
       <DaySection />
-      <PlanSection />
-      <MapsSection />
-      <CounterSection />
+      <MapSection />
+      <GiftSection />
+      <Form />
     </main>
   );
 };

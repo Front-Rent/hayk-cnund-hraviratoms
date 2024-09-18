@@ -4,24 +4,21 @@ const YOUR_SERVICE_ID = "service_iddtzgd";
 const YOUR_TEMPLATE_ID = "template_4lc90yw";
 const YOUR_USER_ID = "G4oq1Ldx3K5iqSUp3";
 
-const sendEmail = async (username, phoneNumber, guests) => {
+const sendEmail = async (name, attendance) => {
   try {
-    const templateParams1 = {
-      username,
-      phoneNumber,
-      guests,
-      to_email: "rparonyan00@gmail.com",
+    const templateParams = {
+      name,
+      attendance,
+      to_email1: "haykzakaryan1@outlook.com",
+      to_email2: "rparonyan00@gmail.com",
     };
-    const result1 = await emailjs.send(
+    const result = await emailjs.send(
       YOUR_SERVICE_ID,
       YOUR_TEMPLATE_ID,
-      templateParams1,
+      templateParams,
       YOUR_USER_ID
     );
-    console.log(
-      "Email sent to rparonyan00@gmail.com successfully:",
-      result1.text
-    );
+    console.log("Email sent successfully:", result.text);
   } catch (error) {
     console.error("Failed to send email:", error);
   }

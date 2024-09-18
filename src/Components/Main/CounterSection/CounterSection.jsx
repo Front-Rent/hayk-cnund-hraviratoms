@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import "./CounterSection.scss";
 
 const calculateTimeLeft = () => {
@@ -29,27 +30,27 @@ const CounterSection = () => {
 
   return (
     <section className="counter-section">
-      <h3>Սպասում ենք ձեզ․․․</h3>
+      <h3>I'm waiting for you</h3>
       <div className="counter-section-divs">
         <div className="counter-section-divs-day">
           {timeLeft.days}
           <br />
-          <span>Օր</span>
+          <span>Day</span>
         </div>
         <div className="counter-section-divs-houers">
           {timeLeft.hours}
           <br />
-          <span>Ժամ</span>
+          <span>hour</span>
         </div>
         <div className="counter-section-divs-mitutes">
           {timeLeft.minutes}
           <br />
-          <span>Րոպե</span>
+          <span>minute</span>
         </div>
         <div className="counter-section-divs-seconds">
           {timeLeft.seconds}
           <br />
-          <span>Վարկիան</span>
+          <span>seconds</span>
         </div>
       </div>
     </section>

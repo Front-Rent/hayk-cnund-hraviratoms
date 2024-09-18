@@ -7,14 +7,15 @@ form {
   text-align: center;
   justify-content: center;
   gap: 50px;
+  background-color: #363636;
+  transition: all 0.3s ease;
   h2 {
-    font-family: "Dzeragir", sans-serif;
     font-size: 35px;
     font-weight: 200;
+    color: #fff;
   }
 
-  .footer-name,
-  .footer-guests {
+  .form-name {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,39 +23,39 @@ form {
     gap: 30px;
     &:nth-child(2) {
       position: relative;
-      left: -50px;
     }
     h3 {
-      font-family: "Dzeragir", sans-serif;
       font-size: 30px;
+      color: #ddd;
     }
 
     input {
       background: transparent;
       border: none;
-      font-family: "Vrdzagir", sans-serif;
-      font-size: 25px;
+      width: 100%;
+      font-size: 20px;
       color: black;
       padding-bottom: 10px;
       border-bottom: 1px solid gray;
       outline: none;
+      color: #fff;
     }
   }
 
-  .footer-agare {
+  .form-agare {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    position: relative;
+    left: -40px;
 
     label {
       font-size: 18px;
-      color: #333;
+      color: #ddd;
       cursor: pointer;
       display: flex;
       align-items: center;
-
-      font-family: "Vrdzagir", sans-serif;
 
       input[type="radio"] {
         accent-color: #000;
@@ -63,7 +64,7 @@ form {
       }
 
       &:hover {
-        color: #000;
+        color: #fff;
       }
     }
   }
@@ -74,7 +75,17 @@ form {
     font-size: 20px;
     border-radius: 20px;
     cursor: pointer;
-    color: black;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  .loading-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    color: #333;
   }
 }
 
@@ -87,8 +98,8 @@ form {
       font-size: 30px;
     }
 
-    .footer-name,
-    .footer-guests {
+    .form-name,
+    .form-guests {
       gap: 25px;
 
       h3 {
@@ -100,7 +111,7 @@ form {
       }
     }
 
-    .footer-agare label {
+    .form-agare label {
       font-size: 16px;
     }
 
@@ -120,8 +131,8 @@ form {
       font-size: 28px;
     }
 
-    .footer-name,
-    .footer-guests {
+    .form-name,
+    .form-guests {
       gap: 20px;
 
       h3 {
@@ -133,7 +144,7 @@ form {
       }
     }
 
-    .footer-agare label {
+    .form-agare label {
       font-size: 14px;
     }
 
@@ -153,8 +164,8 @@ form {
       font-size: 24px;
     }
 
-    .footer-name,
-    .footer-guests {
+    .form-name,
+    .form-guests {
       gap: 15px;
 
       h3 {
@@ -166,7 +177,7 @@ form {
       }
     }
 
-    .footer-agare label {
+    .form-agare label {
       font-size: 12px;
     }
 

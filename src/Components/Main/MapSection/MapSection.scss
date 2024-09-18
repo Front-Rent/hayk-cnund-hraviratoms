@@ -1,0 +1,69 @@
+.map-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  background-color: #363636;
+
+  &-button {
+    position: relative;
+
+    & > img {
+      width: 230px;
+    }
+
+    & > button {
+      position: absolute;
+      top: 41%;
+      left: 50%;
+      background-color: transparent;
+      border: none;
+      font-size: 30px;
+      transform: translateX(-50%);
+      color: #ccc;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &-button {
+      & > img {
+        width: 200px;
+      }
+
+      & > button {
+        font-size: 26px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    gap: 30px;
+
+    &-button {
+      & > img {
+        width: 180px;
+      }
+
+      & > button {
+        font-size: 22px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    gap: 20px;
+
+    &-button {
+      & > img {
+        width: 150px;
+      }
+
+      & > button {
+        font-size: 18px;
+      }
+    }
+  }
+}
