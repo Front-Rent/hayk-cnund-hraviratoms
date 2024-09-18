@@ -3,13 +3,11 @@ import { useInView } from "react-intersection-observer";
 import "./HyurerSection.scss";
 
 const HyurerSection = () => {
-  // Create an intersection observer for the section
   const { ref: sectionRef, inView: sectionInView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
-  // Create an intersection observer for individual elements
   const { ref: headingRef, inView: headingInView } = useInView({
     triggerOnce: true,
     threshold: 0.1,

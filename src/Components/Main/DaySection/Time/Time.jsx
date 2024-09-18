@@ -15,12 +15,12 @@ const Time = () => {
     >
       <h2>Time</h2>
       <p>
-        29 September 2024 <br /> 17:00
+        29 September 2024 <br /> 19:00
       </p>
       <div className="day-section-when-img">
         <motion.img
           src={time}
-          alt=""
+          alt="time"
           initial={{ scale: 0 }}
           animate={inView ? { scale: 1 } : { scale: 0 }}
           transition={{ duration: 1 }}
