@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import nkar from "../../assets/Imgs/header.jpg";
+import nkar from "../../assets/Imgs/header-img.jpg";
 import birthday from "../../assets/Imgs/birthday.png";
 import "./Header.scss";
 

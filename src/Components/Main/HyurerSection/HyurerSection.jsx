@@ -49,7 +49,7 @@ const HyurerSection = () => {
         }
         transition={{ duration: 1, delay: 1 }}
       >
-        I threw the coolest party of the year! <br />
+        I threwing the coolest party of the year! <br />
         You must attend, <br />
         No refusals accepted.
       </motion.p>
@@ -61,7 +61,7 @@ const HyurerSection = () => {
         }
         transition={{ duration: 1, delay: 1.5 }}
       >
-        Put everything aside and come on my <br />
+        Put everything aside and come to my <br />
         birthday for cool music, delicious food, <br />
         dancing <br />
         and alcohol.
