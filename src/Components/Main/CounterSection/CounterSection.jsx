@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./CounterSection.scss";
 
 const calculateTimeLeft = () => {
-  const endTime = new Date("2025-08-09T23:59:59");
+  const endTime = new Date("2024-09-29T23:59:59");
   const now = new Date();
   const difference = endTime - now;
 
