@@ -1,8 +1,8 @@
 import emailjs from "emailjs-com";
 
-const YOUR_SERVICE_ID = "service_iddtzgd";
-const YOUR_TEMPLATE_ID = "template_4lc90yw";
-const YOUR_USER_ID = "G4oq1Ldx3K5iqSUp3";
+const YOUR_SERVICE_ID = "service_jgl2b61";
+const YOUR_TEMPLATE_ID = "template_8ufkscl";
+const YOUR_USER_ID = "gCuXPlQf4Wy1to_Wf";
 
 const sendEmail = async (name, attendance) => {
   try {
