@@ -81,9 +81,12 @@
 
 @media (max-width: 768px) {
   .counter-section {
+    top: 200px;
     height: 300px;
     gap: 30px;
-
+    &::before {
+      width: 100%;
+    }
     & > h3 {
       font-size: 20px;
     }
